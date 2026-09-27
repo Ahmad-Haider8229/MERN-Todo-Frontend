@@ -16,7 +16,7 @@ const signup = () => {
 
   const login = async () => {
 
-    axios.post("http://localhost:8000/auth/login", { email, password })
+    axios.post("https://mern-todo-server-silk.vercel.app/auth/login", { email, password })
       .then((res) => {
 
         const { status, data } = res

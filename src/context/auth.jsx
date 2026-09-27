@@ -26,7 +26,7 @@ if (!token) {
     }
 
  
- axios.get("http://localhost:8000/auth/user", {headers: {Authorization:`Bearer ${token}`}})
+ axios.get("https://mern-todo-server-silk.vercel.app/auth/user", {headers: {Authorization:`Bearer ${token}`}})
 .then((res) => {
 
 const {status, data} = res

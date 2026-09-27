@@ -23,7 +23,7 @@ const signup = () => {
 
   const signup = async () => {
 
-    axios.post("http://localhost:8000/auth/register", user)
+    axios.post("https://mern-todo-server-silk.vercel.app/auth/register", user)
       .then((res) => {
 
         const { status, data } = res
