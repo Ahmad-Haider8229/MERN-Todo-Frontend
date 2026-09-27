@@ -224,7 +224,7 @@ const Hero = () => {
 
 
           <div className="table-responsive" style={{ overflow: "visible"}}>
-            <table className="table  table-hover " >
+            <table className="table  table-hover container-page " >
               <thead className="table-dark">
                 <tr>
                   <th>ID</th>
