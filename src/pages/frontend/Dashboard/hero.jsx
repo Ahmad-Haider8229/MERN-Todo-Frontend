@@ -171,7 +171,7 @@ const Hero = () => {
   }
 
 
-  
+
 
 
 
@@ -223,8 +223,8 @@ const Hero = () => {
         <div className="container mt-5" >
 
 
-          <div className="table-responsive">
-            <table className="table  table-hover" >
+          <div className="table-responsive" style={{ overflow: "visible"}}>
+            <table className="table  table-hover " >
               <thead className="table-dark">
                 <tr>
                   <th>ID</th>
@@ -238,7 +238,7 @@ const Hero = () => {
 
                 </tr>
               </thead>
-              <tbody >
+              <tbody className="">
                 {todo.map(item => (
 
 
@@ -281,11 +281,12 @@ const Hero = () => {
                           type="button"
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
+                          data-bs-boundary="viewport"
                           style={{ background: 'transparent', border: 'none' }}
                         >
                           <i className="bi bi-three-dots-vertical" style={{ fontSize: '20px' }}></i>
                         </button>
-                        <ul className=" dropdown-menu dropdown-menu-end" >
+                        <ul className=" dropdown-menu dropdown-menu-end  " >
                           {!item.status && (
                             <>
                               <li>
