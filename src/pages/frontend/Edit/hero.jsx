@@ -27,7 +27,7 @@ const hero = () => {
     setLoading(true)
 
     const token = localStorage.getItem("jwt")
-    axios.get(`http://localhost:8000/todo/single/${todoId}`, { headers: { Authorization: `Bearer ${token}` } })
+    axios.get(`https://mern-todo-server-silk.vercel.app/todo/single/${todoId}`, { headers: { Authorization: `Bearer ${token}` } })
       .then((res) => {
         const { status, data } = res
         if (status === 200) {
@@ -93,7 +93,7 @@ const hero = () => {
 
     try {
       const token = localStorage.getItem("jwt")
-      axios.patch("http://localhost:8000/todo/update", todo, { headers: { Authorization: `Bearer ${token}` } })
+      axios.patch("https://mern-todo-server-silk.vercel.app/todo/update", todo, { headers: { Authorization: `Bearer ${token}` } })
         .then((res) => {
           const { status, data } = res
           if (status === 200) {

@@ -31,7 +31,7 @@ const Hero = () => {
 
     try {
       const token = localStorage.getItem("jwt")
-      axios.post("http://localhost:8000/todo/create", todo, { headers: { Authorization: `Bearer ${token}` } })
+      axios.post("https://mern-todo-server-silk.vercel.app/todo/create", todo, { headers: { Authorization: `Bearer ${token}` } })
         .then((res) => {
           const { status, data } = res
           if (status === 201) {
